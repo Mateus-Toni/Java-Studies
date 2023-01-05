@@ -1,13 +1,12 @@
 
 public class ValidateCpf {
     public static void main(String[] args) {
+
         String cpf = "52998224725";
         float multFirstNumber = 10;
         float multSecondNumber = 11;
         double calc = 0;
         String lastNumbers;
-        String compare;
-
 
         for (int count=0; count <= (cpf.length() - 3); count++){
 
@@ -28,16 +27,16 @@ public class ValidateCpf {
 
         }
 
-        //System.out.println((calc * 10) % 1);
-
         lastNumbers += Double.toString((calc * 10) % 11).replace(".0", "");
+        
+        if (lastNumbers.equals(cpf.substring(9))){
 
-        compare = cpf.substring(9);
-
-        if (lastNumbers == compare){
             System.out.println("Cpf valido");
+
         }else{
+
             System.out.println("invalido");
+        
         }
 
     }
