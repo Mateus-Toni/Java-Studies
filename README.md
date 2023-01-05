@@ -139,6 +139,7 @@ In java divison between 2 int numbers will result print
 ```
 #### Assignment
 
+```
 variable += number
 variable -= number
 variable *= number
@@ -148,7 +149,7 @@ variable++ - run first then sum one
 variable-- - run first then reduce one
 ++variable - sum one first then run
 --variable - reduce one first then run
-
+```
 #### Ternary
 
 condition ? if true : if false
@@ -178,7 +179,7 @@ if(isAdulto){
 #### Switch
 
 Verify if a varible match one of the mapped cases
-
+(char, int, string, short, byte, enum)
 #### Example Switch
 
 ```java
