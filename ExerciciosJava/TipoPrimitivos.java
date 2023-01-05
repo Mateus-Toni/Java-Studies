@@ -1,3 +1,4 @@
+package ExerciciosJava;
 public class TipoPrimitivos {
     public static void main(String[] args) {
         // int, double, float, char, byte, short, long, boolean
@@ -8,7 +9,7 @@ public class TipoPrimitivos {
         byte ageByte = 10;
         short ageShort = 10;
         boolean isTrue = true;
-        long salLong = 100000;
+        //long salLong = 100000;
         char sex = 'M';
         String name = "mateus";
 
