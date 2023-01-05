@@ -132,11 +132,11 @@ In java divison between 2 int numbers will result print
 ** - power
 
 #### Logic
-
+```
 && - and
 // - or
 ! - not
-
+```
 #### Assignment
 
 variable += number
