@@ -1,4 +1,4 @@
-package ExerciciosJava;
+package exerciciosjava;
 public class TipoPrimitivos {
     public static void main(String[] args) {
         // int, double, float, char, byte, short, long, boolean
@@ -21,7 +21,7 @@ public class TipoPrimitivos {
         System.out.println(isTrue);  
         System.out.println(sex);
         System.out.println(name);
-            
+
     }       
 }       
      

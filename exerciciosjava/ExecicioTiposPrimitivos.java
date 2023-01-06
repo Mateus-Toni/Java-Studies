@@ -1,4 +1,4 @@
-package ExerciciosJava;
+package exerciciosjava;
 public class ExecicioTiposPrimitivos {
     public static void main(String[] args) {
     

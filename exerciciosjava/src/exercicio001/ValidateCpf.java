@@ -1,6 +1,7 @@
-package exercicios;
+package exerciciosjava.src.exercicio001;
 
 public class ValidateCpf {
+    
     public static void main(String[] args) {
 
         String cpf = "52998224725";
