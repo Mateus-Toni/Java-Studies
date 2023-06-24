@@ -5,32 +5,32 @@ public class ValidateCpf {
     public static void main(String[] args) {
 
         String cpf = "52998224725";
-        float multFirstNumber = 10;
-        float multSecondNumber = 11;
+        float multNumber = 10;
         double calc = 0;
         String lastNumbers;
 
         for (int count=0; count <= (cpf.length() - 3); count++){
 
-            calc += Integer.parseInt(cpf.split("")[count]) * multFirstNumber;
+            calc += Integer.parseInt(cpf.split("")[count]) * multNumber;
 
-            multFirstNumber--;
+            multNumber--;
 
         }
 
-        lastNumbers = Double.toString((calc * 10) % 11).replace(".0", "");
+        lastNumbers = String.valueOf((int) (calc * 10) % 11);
+        multNumber = 11;
         calc = 0;
 
         for (int count=0; count <= (cpf.length() - 2); count++){
 
-            calc += Integer.parseInt(cpf.split("")[count]) * multSecondNumber;
+            calc += Integer.parseInt(cpf.split("")[count]) * multNumber;
 
-            multSecondNumber--;
+            multNumber--;
 
         }
 
-        lastNumbers += Double.toString((calc * 10) % 11).replace(".0", "");
-        
+        lastNumbers += String.valueOf((int) (calc * 10) % 11);
+
         if (lastNumbers.equals(cpf.substring(9))){
 
             System.out.println("Cpf valido");
